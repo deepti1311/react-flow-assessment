@@ -26,9 +26,9 @@ function App() {
   } = useFlowHook({
     nodes,
     edges,
+    selectedNode,
     setNodes,
     setEdges,
-    selectedNode,
     setSelectedNode,
   });
 

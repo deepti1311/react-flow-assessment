@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlus,
@@ -8,11 +7,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const FlowButtons = ({
-  onAddNode,
-  onDeleteSelectedNode,
-  onSaveFlow,
-  onLoadFlow,
-  isDeleteDisabled,
+  onAddNode = () => {},
+  onDeleteSelectedNode = () => {},
+  onSaveFlow = () => {},
+  onLoadFlow = () => {},
+  isDeleteDisabled = false,
 }) => {
   return (
     <div className="button-container">

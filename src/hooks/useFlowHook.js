@@ -2,12 +2,12 @@ import { useCallback } from "react";
 
 //Custom hook to handle the react flow canvas
 const useFlowHook = ({
-  nodes,
-  edges,
-  setNodes,
-  setEdges,
-  selectedNode,
-  setSelectedNode,
+  nodes = [],
+  edges = [],
+  selectedNode = null,
+  setNodes = () => {},
+  setEdges = () => {},
+  setSelectedNode = () => {},
 }) => {
   //handle adding node on click of add
   const addNode = useCallback(() => {
